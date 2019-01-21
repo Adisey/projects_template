@@ -1,0 +1,7 @@
+// Coloque su configuración en este archivo para sobrescribir la configuración predeterminada y de usuario.
+// PostCSS validation using stylelint: https://github.com/Microsoft/vscode/issues/3907
+{
+  "css.validate": false,
+  "stylelint.enable": true
+  "eslint.validate": [ "javascript", "javascriptreact", { "language": "html", "autoFix": true } ]
+}

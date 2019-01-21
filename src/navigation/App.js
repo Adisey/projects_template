@@ -3,6 +3,8 @@ import { hot } from 'react-hot-loader';
 
 import logo from '../static/img/logo.svg';
 import './App.css';
+// Styles
+import './App.scss';
 
 //
 class App extends Component {
@@ -15,12 +17,16 @@ class App extends Component {
                         Edit <code>src/App.js</code> and save to reload.
                     </p>
                     <a
-                        className = 'App-link'
+                        className = { 'App-link' }
                         href = 'https://reactjs.org'
                         rel = 'noopener noreferrer'
                         target = '_blank'>
                         Learn React
                     </a>
+                    <div className = { 'test12' }>
+                        xcsdfsd
+                        <div className = { 'p12' }>123</div>
+                    </div>
                 </header>
             </div>
         );

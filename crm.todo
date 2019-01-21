@@ -1,0 +1,18 @@
+MainProject:
+    ✔ Visual Studio Code recoment Plugins @done(19-01-20 13:33)
+    ✔ Visual Studio Code connect ESLint @done(19-01-20 13:33)
+    ✔ HotLoader @done(19-01-20 13:24)
+    ☐ подключить PostCSS
+        ✔ пока подключил только SASS @done(19-01-21 02:00)
+    ☐ Redux
+    ☐ move dev from dependencies to -> devDependencies
+
+
+MakeCRM:
+    ✔ Structure Project @done(19-01-20 13:57)
+    ☐ Pages   
+    ☐ React Router
+    ☐ Login Form
+    ☐ Registration Form
+    ☐ Spinner
+    ☐ Messager

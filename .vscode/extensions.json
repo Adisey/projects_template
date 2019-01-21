@@ -1,0 +1,34 @@
+{
+    // See http://go.microsoft.com/fwlink/?LinkId=827846
+    // for the documentation about the extensions.json format
+    "recommendations": [
+        // Extension identifier format : ${publisher}.${name}. Example: vscode.csharp
+        "anseki.vscode-color",
+        "chrmarti.regex",
+        "coenraads.bracket-pair-colorizer",
+        "coenraads.bracket-pair-colorizer",
+        "cpylua.language-postcss",
+        "cssho.vscode-svgviewer",
+        "dbaeumer.vscode-eslint",
+        "donjayamanne.githistory",
+        "dsznajder.es7-react-js-snippets",
+        "eamodio.gitlens",
+        "earshinov.sort-lines-by-selection",
+        "esbenp.prettier-vscode",
+        "fabiospampinato.vscode-todo-plus",
+        "jerryhong.autofilename",
+        "mhmadhamster.postcss-language",
+        "miclo.sort-typescript-imports",
+        "mrmlnc.vscode-stylefmt",
+        "naumovs.color-highlight",
+        "richie5um2.vscode-sort-json",
+        "shinnn.stylelint",
+        "streetsidesoftware.code-spell-checker-russian",
+        "streetsidesoftware.code-spell-checker",
+        "stringham.move-ts",
+        "vitaliymaz.vscode-svg-previewer",
+        "wix.vscode-import-cost",
+        "yoshinorin.current-file-path",
+        "zengxingxin.sort-js-object-keys"
+    ]
+}
