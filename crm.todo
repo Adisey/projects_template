@@ -5,7 +5,8 @@ MainProject:
     ☐ подключить PostCSS
         ✔ пока подключил только SASS @done(19-01-21 02:00)
     ☐ Redux
-    ☐ move dev from dependencies to -> devDependencies
+    ✔ move dev from dependencies to -> devDependencies @done(19-01-21 22:33)
+    ☐ README.md
 
 
 MakeCRM:
