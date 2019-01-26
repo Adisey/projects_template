@@ -11,5 +11,5 @@
     + React Router
     + Login Form
     + Registration Form
-    + Spinner
-    + Messenger
+    - Spinner
+    - Messenger
