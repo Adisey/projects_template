@@ -6,8 +6,9 @@ settings:
     onlyFilesWithFlowAnnotation: false
 
 parserOptions:
-  sourceType: "module"
-
+    sourceType: "module"
+    experimentalDecorators: true
+    
 plugins:
   - react
 
@@ -286,7 +287,7 @@ rules:
   react/jsx-closing-bracket-location: [2, {"selfClosing": "line-aligned", nonEmpty: "after-props"}]
   react/jsx-curly-spacing: [2, "always"]
   react/jsx-equals-spacing: [2, "always"]
-  react/jsx-filename-extension: [2, { "extensions": [".js"] }]
+  react/jsx-filename-extension: [2, { "extensions": [".js", ".jsx"] }]
   react/jsx-first-prop-new-line: [2, "multiline"]
   react/jsx-handler-names: 0
   react/jsx-indent: 2

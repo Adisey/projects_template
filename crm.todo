@@ -4,16 +4,29 @@ MainProject:
     ✔ HotLoader @done(19-01-20 13:24)
     ☐ подключить PostCSS
         ✔ пока подключил только SASS @done(19-01-21 02:00)
-    ☐ Redux
+    ✔ Redux @done(19-01-24 00:35)
     ✔ move dev from dependencies to -> devDependencies @done(19-01-21 22:33)
-    ☐ README.md
+    ✔ README.md @done(19-01-21 22:39)
 
 
 MakeCRM:
     ✔ Structure Project @done(19-01-20 13:57)
-    ☐ Pages   
-    ☐ React Router
-    ☐ Login Form
-    ☐ Registration Form
+    ✔ Pages @done(19-01-24 00:44)
+        ✔ Добавить кнопки перехода @done(19-01-27 01:25)
+    ✔ React Router @done(19-01-24 00:44)
+    ✔ Login Form @done(19-01-27 01:15)
+        ✔ Отобразить @done(19-01-25 00:40)
+        ✔ Войти запиcав в Redux @done(19-01-25 01:17)
+        ✔ Красиво раскрасить @done(19-01-26 01:07)
+        ✔ Для чего isInitialized @done(19-01-26 01:05)
+        ✔ Добавить кнопку перейти на страницу регистрации @done(19-01-26 23:44)
+        ✔ Вход по Token @done(19-01-26 23:48)
+    ✔ Registration Form @done(19-01-26 23:44)
+    ✔ Catcher @done(19-01-27 00:08)
+    ✔ Build @done(19-01-27 00:24)
+    ✔ Logout @done(19-01-27 01:14)
+    ☐ stylelint: Undefined rule font-family-no-missing-generic-family-keyword
+    ☐ Выложить сборку
     ☐ Spinner
-    ☐ Messager
+    ☐ Messenger
+

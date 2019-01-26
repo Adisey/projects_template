@@ -1,0 +1,165 @@
+@import "../../theme/palette.scss";
+@keyframes pugdancing {
+    0% {
+        top: 0;
+        left: 5px;
+    }
+    25% {
+        top: 10px;
+        left: 10px;
+    }
+    50% {
+        top: 0;
+        left: 15px;
+    }
+    75% {
+        top: 10px;
+        left: 10px;
+    }
+    100% {
+        top: 0;
+        left: 5px;
+    }
+}
+
+.loading {
+    & .absolute-center {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        margin: auto;
+    }
+
+    & .absolute-auto {
+        position: absolute;
+        display: block;
+        margin: auto;
+    }
+
+    & .container--center {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        min-width: 100vw;
+        min-height: 100vh;
+        margin: auto;
+        background-color: var(--paletteColor7);
+        text-align: center;
+    }
+
+    /* Pug */
+
+    & .dancing-pug {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 40px 40px 0 0;
+            background-color: var(--paletteColor27);
+        }
+    }
+
+    & ul {
+        position: absolute;
+        left: 10px;
+        display: block;
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        border-radius: 50px;
+        margin: auto;
+        background-color: var(--paletteColor26);
+        list-style: none;
+        animation: pugdancing 1s ease-in-out infinite;
+
+        &:after {
+            content: "• ";
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            bottom: 14px;
+            left: 0;
+            display: block;
+            width: 40px;
+            height: 30px;
+            border-radius: 20px;
+            margin: auto;
+            color: var(--paletteColor29);
+            background-color: var(--paletteColor28);
+        }
+    }
+
+    & li {
+        position: absolute;
+        display: block;
+        margin: auto;
+    }
+
+    & .ear {
+        z-index: 3;
+        width: 0;
+        border-width: 20px 16px;
+        border-style: solid;
+        border-color: transparent;
+    }
+
+    & .eye {
+        z-index: 3;
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+        background-color: var(--paletteColor29);
+    }
+
+    & li:nth-child(1) {
+        top: 6px;
+        left: -14px;
+        border-top-color: var(--paletteColor28);
+    }
+
+    & li:nth-child(2) {
+        top: 6px;
+        right: -14px;
+        border-top-color: var(--paletteColor28);
+    }
+
+    & li:nth-child(3) {
+        top: 30px;
+        left: 4px;
+    }
+
+    & li:nth-child(4) {
+        top: 30px;
+        right: 4px;
+    }
+
+    & li:nth-child(5) {
+        z-index: 5;
+        bottom: 4px;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 0 0 10px 10px;
+        margin-left: -10px;
+        background-color: var(--paletteColor30);
+    }
+}

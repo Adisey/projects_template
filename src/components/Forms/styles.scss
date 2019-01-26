@@ -1,0 +1,223 @@
+@import "../../theme/palette.scss";
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 42px);
+    padding: 42px;
+    background-color: var(--paletteColor3);
+
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 550px;
+        padding-bottom: 25px;
+
+        & div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            & h1 {
+                font-size: 45px;
+                font-weight: 700;
+            }
+
+            & img {
+                width: 180px;
+                height: 180px;
+                border: 4px solid var(--paletteColor2);
+                border-radius: 50%;
+                margin: 20px 0;
+                background-color: var(--paletteColor2);
+                cursor: pointer;
+            }
+
+            & input {
+                width: 230px;
+                height: 40px;
+                padding: 8px 10px;
+                border: 1px solid var(--paletteColor14);
+                border-radius: 7px;
+                margin: 0 0 20px;
+                color: var(--paletteColor15);
+                outline: none;
+                font-size: 17px;
+                transition: border .3s ease, box-shadow .3s ease;
+
+                &[type="checkbox"] {
+                    width: auto;
+                    margin: 0 10px;
+                }
+
+                & [type="file"] {
+                    border: 1px solid black;
+                    margin: 20px 0;
+                    cursor: pointer;
+                }
+
+                &:focus {
+                    box-shadow: 0 5px 6px -6px;
+                    border-color: var(--paletteColor7);
+                }
+            }
+
+            & .invalidInput {
+                border: 1px solid red;
+
+                &:focus {
+                    border: 1px solid crimson;
+                    box-shadow: 0 5px 6px -6px var(--paletteColor25);
+                }
+            }
+
+            & .rememberMe {
+                display: flex;
+                align-items: center;
+                margin: 0 0 20px;
+                color: var(--paletteColor8);
+                font-size: 14px;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            & button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 230px;
+                height: 34px;
+                padding: 0 16px;
+                border: none;
+                border-radius: 7px;
+                margin-bottom: 20px;
+                color: var(--paletteColor2);
+                outline: 0;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background-color .2s ease-out, border-color .2s ease-out, box-shadow .3s ease;
+            }
+
+            & .loginSubmit,
+            & .profileSubmit {
+                background-color: var(--paletteColor6);
+
+                &:hover {
+                    box-shadow: 0 3px 3px -1px var(--paletteColor5);
+                    border-color: var(--paletteColor7);
+                    background-color: var(--paletteColor7);
+                }
+            }
+
+            & .signupSubmit {
+                border: 1px solid;
+                background: var(--gradient1);
+                box-shadow: inset 0 1px 1px var(--paletteColor20);
+                box-shadow: 0 3px 3px -1px transparent;
+                border-color: var(--paletteColor18) var(--paletteColor18) var(--paletteColor19);
+                background-color: var(--paletteColor22);
+                transition: box-shadow .5s ease;
+
+                &:hover {
+                    box-shadow: 0 3px 3px -1px var(--paletteColor22);
+                }
+            }
+
+            & .fileInput {
+                position: absolute;
+                z-index: -1;
+                overflow: hidden;
+                width: .1px;
+                height: .1px;
+                opacity: 0;
+
+                & + label {
+                    padding: 6px 12px;
+                    border: 1px solid var(--paletteColor24);
+                    border-radius: 7px;
+                    margin-bottom: 20px;
+                    color: var(--paletteColor8);
+                    font-size: 20px;
+                    font-weight: 700;
+                    background-color: transparent;
+                    cursor: pointer;
+                    transition: background-color .2s ease-out, border-color .2s ease-out, box-shadow .3s ease;
+                }
+
+                &:focus + label,
+                & + label:hover {
+                    box-shadow: 0 3px 3px -1px var(--paletteColor7);
+                }
+            }
+
+            & i {
+                position: relative;
+
+                & .cancelUpdate {
+                    position: absolute;
+                    left: -30px;
+                    width: 110px;
+                    margin-top: 10px;
+                    color: var(--paletteColor5);
+                    font-size: 10px;
+                    transition: color .2s ease-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--paletteColor1);
+                    }
+                }
+            }
+        }
+    }
+
+    & .centered {
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    & .disabledInput {
+        & div {
+            & input {
+                background-color: var(--paletteColor3);
+            }
+        }
+    }
+
+    & .disabledInputRedux {
+        background-color: var(--paletteColor3);
+    }
+
+    & .disabledButton {
+        background-color: var(--paletteColor7);
+    }
+
+    & a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 230px;
+        height: 34px;
+        padding: 0 16px;
+        border-radius: 7px;
+        color: var(--paletteColor2);
+        outline: 0;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color .2s ease-out, border-color .2s ease-out, box-shadow .3s ease;
+        background-color: var(--paletteColor6);
+        text-decoration: none;
+
+        &:hover {
+            box-shadow: 0 3px 3px -1px var(--paletteColor5);
+            border-color: var(--paletteColor7);
+            background-color: var(--paletteColor7);
+        }
+    }
+}
